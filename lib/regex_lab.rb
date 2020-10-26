@@ -13,7 +13,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   cap_word = text.scan(/\b[A-Z]\w+[.,;]/)
-  return cap_word > 0
+  return cap_word.length > 0
 end
 
 def valid_phone_number?(phone)
